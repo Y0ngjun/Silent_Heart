@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=waving&color=0:2ecc71,100:1abc9c&height=250&section=header&text=Silent%20Heart&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=40)
+[![header](https://capsule-render.vercel.app/api?type=waving&color=0:2ecc71,100:1abc9c&height=250&section=header&text=Silent%20Heart&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=40)
 
 # Silent Heart 💚
 
@@ -7,12 +7,12 @@
 ## 📌 목차
 1. [소개](#-소개)
 2. [데모](#-데모)
-4. [기능 요약](#-기능-요약)
+4. [기능 요약](#%EF%B8%8F-기능-요약)
 5. [프로젝트 구조](#-프로젝트-구조)
 6. [기술 스택](#-기술-스택)
 7. [설치 및 실행 방법](#-설치-및-실행-방법)
 8. [사용법](#-사용법)
-9. [스크린샷 및 UI 설명](#-스크린샷-및-ui-설명)
+9. [스크린샷 및 UI 설명](#%EF%B8%8F-스크린샷-및-ui-설명)
 10. [커스터마이징 및 확장](#-커스터마이징-및-확장)
 11. [트러블슈팅](#-트러블슈팅)
 12. [기여 방법](#-기여-방법)
@@ -56,6 +56,8 @@ silent_heart/
     ├── ui_renderer.py       # UI 그리기 모듈  
     └── main.py              # 실행 메인 루프  
 ```
+## 📚 기술 스택
+<p align="left"> <img src="https://img.shields.io/badge/Python-3.10-blue?logo=python&logoColor=white" alt="Python"/> <img src="https://img.shields.io/badge/OpenCV-4.x-brightgreen?logo=opencv&logoColor=white" alt="OpenCV"/> <img src="https://img.shields.io/badge/MediaPipe-0.10-orange?logo=google&logoColor=white" alt="MediaPipe"/> <img src="https://img.shields.io/badge/Numpy-1.x-blueviolet?logo=numpy&logoColor=white" alt="NumPy"/> <img src="https://img.shields.io/badge/Pandas-2.x-lightgrey?logo=pandas&logoColor=black" alt="Pandas"/> <img src="https://img.shields.io/badge/scikit--learn-1.x-f7931e?logo=scikit-learn&logoColor=white" alt="scikit-learn"/> <img src="https://img.shields.io/badge/joblib-%3E1.3-green?logo=python&logoColor=white" alt="joblib"/> </p>
 
 ## 🚀 설치 및 실행 방법
 
@@ -122,3 +124,4 @@ MIT License
 
 ---
     Silent Heart is made with 💚 to give voice to your hands.
+](url)
