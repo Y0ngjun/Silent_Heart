@@ -124,4 +124,3 @@ MIT License
 
 ---
     Silent Heart is made with 💚 to give voice to your hands.
-](url)
