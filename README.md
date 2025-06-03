@@ -1,4 +1,4 @@
-[![header](https://capsule-render.vercel.app/api?type=waving&color=0:2ecc71,100:1abc9c&height=250&section=header&text=Silent%20Heart&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=40)
+![header](https://capsule-render.vercel.app/api?type=waving&color=0:2ecc71,100:1abc9c&height=250&section=header&text=Silent%20Heart&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=40)
 
 # Silent Heart 💚
 
