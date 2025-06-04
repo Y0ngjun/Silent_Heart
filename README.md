@@ -24,13 +24,17 @@
 ## 🎥 데모
 
 ### Hello World!
-[![Hello World! 데모](http://img.youtube.com/vi/RqqmJxP97tQ/0.jpg)](https://www.youtube.com/watch?v=RqqmJxP97tQ)  
+<a href="https://www.youtube.com/watch?v=RqqmJxP97tQ" target="_blank">
+  <img src="http://img.youtube.com/vi/RqqmJxP97tQ/0.jpg" alt="Hello World! 데모">
+</a>  
 
 ### A to Z
-[![A to Z 데모](http://img.youtube.com/vi/LvayX4JgJXs/0.jpg)](https://www.youtube.com/watch?v=LvayX4JgJXs)
+<a href="https://www.youtube.com/watch?v=LvayX4JgJXs" target="_blank">
+  <img src="http://img.youtube.com/vi/LvayX4JgJXs/0.jpg" alt="A to Z 데모">
+</a>
 
+> 클릭 시 새 탭에서 재생됩니다.
 
-    클릭 시 재생됩니다.
 
 ## ⚙️ 기능 요약
 
