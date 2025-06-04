@@ -1,25 +1,25 @@
 data/
-	processed_data/		# 전처리를 마친 데이터 (필수)
-	raw_landmarks		# 전처리 전 데이터 (필수)
-	demo_data/		# ABCD만 들어있는 데이터
-	res_640/			# 저화질 데이터
+	processed_data/			# 전처리를 마친 데이터 (필수)
+	raw_landmarks			# 전처리 전 데이터 (필수)
+	demo_data/				# ABCD만 들어있는 데이터
+	res_640/				# 저화질 데이터
 example/
-	helloworld.mp4		# 시연영상
-	UI.png			# UI 스크린샷
+	helloworld.mp4			# 시연영상
+	UI.png					# UI 스크린샷
 model/
-	mlp_model.pkl		# 학습된 모델
+	mlp_model.pkl			# 학습된 모델
 references/
-	AtoZ.pdf			# 알파벳 수어
-	EXCLAMATION.png	# 느낌표 수어 	(커스텀)
-	NOTSIGN.png		# 출력 수어 	(커스텀)
-	QUESTION.png		# 물음표 수어 	(커스텀)
+	AtoZ.pdf				# 알파벳 수어
+	EXCLAMATION.png			# 느낌표 수어 	(커스텀)
+	NOTSIGN.png				# 출력 수어 	(커스텀)
+	QUESTION.png			# 물음표 수어 	(커스텀)
 src/
-	__pycahe__/			# 캐시파일
-	unused/			# 데모용 실행파일
+	__pycahe__/				# 캐시파일
+	unused/					# 데모용 실행파일
 	data_collector.py		# 데이터 수집
 	live_inference.py		# 실시간 추측
-	main.py			# 메인 실행 파일
+	main.py					# 메인 실행 파일
 	model_trainer.py		# 모델 학습 파일
-	preprocessor.py		# 데이터 전처리 (정규화 및 스케일링)
-	ui_renderer.py		# UI 렌더링
+	preprocessor.py			# 데이터 전처리 (정규화 및 스케일링)
+	ui_renderer.py			# UI 렌더링
 requirements.txt			# 필요 라이브러리

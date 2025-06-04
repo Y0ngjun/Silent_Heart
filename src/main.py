@@ -9,7 +9,7 @@ cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 720)
 
 inference = LiveInference(hold_threshold=0.5)
 
-print("[INFO] 실시간 수화 인식 시작. ESC로 종료.")
+print("[INFO] 실시간 수어 인식 시작. ESC로 종료.")
 
 while True:
     ret, frame = cap.read()

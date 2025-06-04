@@ -3,7 +3,6 @@
 # Silent Heart 💚
 
     조용한 마음을 전해보세요.
-
 ## 📌 목차
 1. [소개](#-소개)
 2. [데모](#-데모)
@@ -20,11 +19,16 @@
 
 ## 📖 소개
 
-**Silent Heart**는 Mediapipe와 MLP 분류기를 활용해 손 제스처를 인식하고 알파벳/기호로 번역하는 실시간 수어 인식 시스템입니다. 간편한 UI를 통해 누구나 손쉽게 사용 가능합니다.
+**Silent Heart**는 Python기반의 Mediapipe와 MLP 분류기를 활용해 손 제스처를 인식하고 알파벳/기호로 번역하는 실시간 수어 인식 시스템입니다. 간편한 UI를 통해 누구나 손쉽게 사용 가능합니다.
 
 ## 🎥 데모
 
-[![Silent Heart 데모](http://img.youtube.com/vi/RqqmJxP97tQ/0.jpg)](https://www.youtube.com/watch?v=RqqmJxP97tQ)  
+### Hello World!
+[![Hello World! 데모](http://img.youtube.com/vi/RqqmJxP97tQ/0.jpg)](https://www.youtube.com/watch?v=RqqmJxP97tQ)  
+
+### A to Z
+[![A to Z 데모](http://img.youtube.com/vi/LvayX4JgJXs/0.jpg)](https://www.youtube.com/watch?v=LvayX4JgJXs)
+
 
     클릭 시 재생됩니다.
 
@@ -57,33 +61,173 @@ silent_heart/
     └── main.py              # 실행 메인 루프  
 ```
 ## 📚 기술 스택
-<p align="left"> <img src="https://img.shields.io/badge/Python-3.10-blue?logo=python&logoColor=white" alt="Python"/> <img src="https://img.shields.io/badge/OpenCV-4.x-brightgreen?logo=opencv&logoColor=white" alt="OpenCV"/> <img src="https://img.shields.io/badge/MediaPipe-0.10-orange?logo=google&logoColor=white" alt="MediaPipe"/> <img src="https://img.shields.io/badge/Numpy-1.x-blueviolet?logo=numpy&logoColor=white" alt="NumPy"/> <img src="https://img.shields.io/badge/Pandas-2.x-lightgrey?logo=pandas&logoColor=black" alt="Pandas"/> <img src="https://img.shields.io/badge/scikit--learn-1.x-f7931e?logo=scikit-learn&logoColor=white" alt="scikit-learn"/> <img src="https://img.shields.io/badge/joblib-%3E1.3-green?logo=python&logoColor=white" alt="joblib"/> </p>
+<p align="left">
+  <img src="https://img.shields.io/badge/Python-3.10-blue?logo=python&logoColor=white" alt="Python"/>
+  <img src="https://img.shields.io/badge/OpenCV-4.11.0.86-brightgreen?logo=opencv&logoColor=white" alt="OpenCV"/>
+  <img src="https://img.shields.io/badge/MediaPipe-0.10.21-orange?logo=google&logoColor=white" alt="MediaPipe"/>
+  <img src="https://img.shields.io/badge/Numpy-1.26.4-blueviolet?logo=numpy&logoColor=white" alt="NumPy"/>
+  <img src="https://img.shields.io/badge/Pandas-2.2.3-lightgrey?logo=pandas&logoColor=black" alt="Pandas"/>
+  <img src="https://img.shields.io/badge/scikit--learn-1.6.1-f7931e?logo=scikit-learn&logoColor=white" alt="scikit-learn"/>
+  <img src="https://img.shields.io/badge/joblib-1.5.1-green?logo=python&logoColor=white" alt="joblib"/>
+</p>
 
-## 🚀 설치 및 실행 방법
+# 🚀 설치 및 실행 방법
+
+## 🖥️ 실행 환경
+
+
+- 운영체제: **Windows 11**
+- 해상도: **1920 x 1080 (FHD)**
+- 디스플레이 배율: **100%**
+
+> ⚠️ 고해상도(예: 4K) 환경이나 배율이 125% 이상인 경우 UI가 비정상적으로 표시될 수 있습니다.
+
+## 1. 프로젝트 다운로드
+
+
+- GitHub Repository:  
+  🔗 [https://github.com/Y0ngjun/Silent_Heart](https://github.com/Y0ngjun/Silent_Heart)
+
+> ⚠️ **중요:** 프로젝트는 반드시 **영문 경로**에 저장해야 합니다.  
+> 예를 들어, `C:\Users\YourName\Silent_Heart` 처럼 **한글이나 공백이 포함되지 않은 경로**를 사용하세요.
+
+> Mediapipe 등 일부 라이브러리는 한글 경로에서 **리소스 파일을 불러오지 못해 실행이 실패**할 수 있습니다.
+
+## 2. Python 3.10.10 설치
+
+
+- 공식 다운로드 링크:  
+  🔗 [https://www.python.org/downloads/windows/](https://www.python.org/downloads/windows/)
+
+> 설치 시 반드시 **"Add Python to PATH"** 옵션을 체크하세요.
+
+
+## 3. 가상환경 생성 및 활성화
+
+먼저 VSCode에서 클론한 프로젝트 폴더를 엽니다.
+
+> **Tip:** VSCode에서 `파일 → 폴더 열기`를 통해 Silent_Heart 프로젝트 루트 디렉토리를 열어주세요.
+
+**Git Bash 기준:**
 
 ```bash
-# 1. 패키지 설치
+python -m venv .venv
+source .venv/Scripts/activate
+```
+
+
+## 4. 필수 패키지 설치
+
+> 설치 전, VSCode에서 Python 인터프리터를 프로젝트 내 가상환경(`.venv`)으로 설정해야 합니다.
+
+### 🔧 VSCode에서 인터프리터 설정 방법:
+
+1. VSCode 하단의 **Python 인터프리터 표시줄**을 클릭  
+   (또는 `Ctrl + Shift + P` → "Python: 인터프리터 선택")
+2. 목록에서 `.venv\Scripts\python.exe` 경로가 있는 항목을 선택
+
+> 설정 후, VSCode 터미널을 다시 열어야 적용됩니다.
+
+### ✅ 패키지 설치 (가상환경 활성화된 상태에서)
+
+```bash
 pip install -r requirements.txt
+```
 
-# 2. 손 제스처 데이터 수집
-python src/data_collector.py
 
-# 3. 데이터 전처리
-python src/preprocessor.py
+## 5. (선택) VSCode 디버그 설정 수정
 
-# 4. 모델 학습
-python src/model_trainer.py
+`.vscode/launch.json` 파일에서 다음 항목을 수정합니다:
 
-# 5. 실시간 수어 인식 실행
+```json
+"type": "debugpy"  →  "type": "python"
+```
+
+
+## 6. 프로젝트 실행
+
+```bash
 python src/main.py
 ```
-## 🎮 사용법
 
-1. `data_collector.py`에서 `LABEL = "A"` 등으로 수집할 알파벳 지정  
-2. 수어 제스처를 카메라에 비추고 **스페이스바**로 저장  
-3. 충분한 수의 데이터를 수집한 뒤 전처리 및 학습  
-4. `main.py` 실행 후 웹캠 앞에서 수어하면 화면 오른쪽에 인식된 문자가 실시간 출력됨  
-    - 짧은 시간 한가지 수어를 유지하고 NOTSIGN을 입력하면 수어가 출력됨
+# 📘 사용법
+
+## 🔹 1. 수어 데이터 수집
+
+새로운 수어 데이터를 수집하려면 아래 파일을 실행합니다:
+
+```bash
+python src/data_collector.py
+```
+
+### ✏️ 사용법
+- 스크립트 내 `LABEL` 값을 변경하여 수집할 제스처 이름을 설정합니다.
+- 실행 후 웹캠이 켜지고, **스페이스바를 누를 때마다 현재 손 제스처가 저장**됩니다.
+- 수집된 데이터는 `data/raw_landmarks/{LABEL}.csv`로 저장됩니다.
+- 원하는 의미의 커스텀 수어를 추가할 수 있습니다.
+
+
+## 🔹 2. 데이터 전처리
+
+수집된 데이터를 모델 학습에 적합한 형태로 변환하려면 다음 파일을 실행합니다:
+
+```bash
+python src/preprocessor.py
+```
+
+### ✏️ 사용법
+- `data/raw_landmarks`에 있는 `.csv`들을 불러와 전처리한 뒤,
+- `data/processed_data/final_dataset_full.csv` 형태로 저장합니다.
+- 전처리 방식은 손 크기에 따른 스케일링이 적용되고 손목 기준 상대 좌표로 변환됩니다.
+
+
+## 🔹 3. 모델 학습
+
+전처리된 데이터를 기반으로 수어 분류 모델을 학습합니다:
+
+```bash
+python src/model_trainer.py
+```
+
+### ✏️ 사용법
+- 모든 전처리된 `.csv`를 불러와 다중 클래스 분류 모델을 학습합니다.
+- 학습된 모델은 `model/mlp_model.pkl`로 저장됩니다.
+- 기본 모델은 **MLPClassifier (scikit-learn 기반)** 이며, 간단한 **GridSearchCV 기반 하이퍼파라미터 튜닝** 이 포함되어 있습니다.
+
+
+
+## 🔹 4. 실시간 수어 인식 실행
+
+실시간으로 웹캠을 통해 수어를 인식하려면 다음 파일을 실행합니다:
+
+```bash
+python src/main.py
+```
+
+### ✏️ 기능
+- Mediapipe로 손 관절 인식 → 전처리 → 모델 예측 → 실시간 UI 출력
+- 실시간 상태와 문장을 화면에 시각적으로 표시
+- 알파벳, 구두점 등 지정된 수어를 실시간으로 인식
+
+### ✏️ 사용법
+- 특정 수어(알파벳/기호)를 **1초 이상 유지**하면 해당 동작이 **현재 state**로 확정됩니다.
+- 이후 **"NOTSIGN" 수어를 입력하면 해당 state가 문장에 추가**됩니다.
+- 여러 번 입력하려면 반드시 중간에 NOTSIGN을 포함해야 중복 출력되지 않습니다.
+
+
+## ✅ 사용 전 필수 확인
+
+- `model/mlp_model.pkl` 파일이 존재해야 `main.py`가 정상 작동합니다.
+- 수어 라벨 간 구분을 위해 `"NOTSIGN"` 등의 구분 동작을 추가하면 정확도가 향상됩니다.
+
+
+## 🎯 전체 실행 흐름 요약
+
+1. `data_collector.py` – 라벨별 수어 수집  
+2. `preprocessor.py` – 수집 데이터 전처리  
+3. `model_trainer.py` – 모델 학습  
+4. `main.py` – 실시간 인식 및 UI 실행
+
 
 ## 🖼️ 스크린샷 및 UI 설명
 ![image](https://github.com/user-attachments/assets/3d4dedae-b4a4-43b4-ac2a-586d9a4eebcc)
@@ -123,4 +267,5 @@ MIT License
 > 자유롭게 사용하고 개선해 주세요. 단, 출처는 남겨주시기 바랍니다.
 
 ---
-    Silent Heart is made with 💚 to give voice to your hands.
+     💚 Silent Heart는 손의 움직임에 목소리를 담기 위해 만들어졌습니다.  
+     누구든지, 어디서든지 조용한 마음을 전할 수 있도록.
